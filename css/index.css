@@ -118,7 +118,7 @@ body {
     margin-top: 30px;
 }
 
-.textwidget .fa {
+.connectIcon .fa {
     font-size: 26px;
     font-weight: normal;
     margin-right: 10px;
@@ -126,7 +126,7 @@ body {
     color: rgba(0,0,0,.5);
 }
 
-.textwidget .fa:hover {
+.connectIcon .fa:hover {
     color: #000;
     opacity: 1;
 }
@@ -256,6 +256,7 @@ body {
     float: left;
     margin: 0 10px 20px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .thumbs .inside img {
@@ -268,4 +269,60 @@ body {
     -webkit-transform: scale(1,1);
     -ms-transform: scale(1,1);
     transform: scale(1,1);
+}
+
+.insideInfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    color: #191919;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+.insideTitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 21px;
+}
+
+.insideDes {
+    font-size: 14px;
+    font-family: Georgia, serif;
+    color: rgba(25, 25, 25, 0.6);
+    text-align: center;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.inside:hover img {
+    -webkit-transform: scale(1.05,1.05);
+    -ms-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.inside:hover .insideInfo {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* footer */
+.footer {
+    background: #efefef;
+    padding: 60px 0 40px 250px;
+    text-align: center;
+    font-weight: 200;
+    width: 100%;
+    width: 100%;
+}
+
+.websiteInfo {
+    font-size: 12px;
+    margin: 0 50px 20px
 }
